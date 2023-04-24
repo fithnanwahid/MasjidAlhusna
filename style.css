@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body html{
+    height: 100%;
+    width: 100%;
+}
+header{
+    /* background-color: saddlebrown; */
+    
+}
+/* header starr */
+
+    /* header atass */
+.header-atas{
+    background-color: black;
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kontaks{
+    display: flex;
+}
+
+.kontak{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.kontak > span{
+    margin-left: 5px;
+}
+
+.material-symbols-outlined{
+    font-size: 18px;
+}
+
+.sosials{
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 18px;
+    align-items: center;
+}
+
+.sosials > i {
+    padding: 0 10px;
+}
+    /* header atas endd */
+
+
+    /* header bawahh */
+.header-bawah{
+    display: flex;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.menu-togel{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.logo > img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu > li, .menu a{
+    display: inline-block;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px 1.5rem;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.header-bawah > h3{
+    padding: 10px 25px;
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+}
+
+    /* header bawah endd */
+
+
+/* header endd */
+
+
+/* mainbody starr */
+
+    /* gambarr starr */
+.bodyutama{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    /* overflow-y: hidden; */
+    /* display: flex; */
+}
+
+
+
+/* sidebar starr */
+
+.sidebar {
+    display: none;
+}
+/* sidebar end */
+
+
+.gambar{
+    background-color: green;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    padding: 70px 70px;
+
+}
+.kata{
+    width: 50%;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.kata > h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.kata > p {
+    margin-bottom: 50px;
+}
+
+.kata > h3 {
+    background-color: orange;
+    color: white;
+    padding: 10px 25px;
+    display: inline;
+    border-radius: 10px;
+}
+    /* gambar endd */
+
+    /* kegiatan starr */
+
+.even{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.kegiatans{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kegiatan{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    /* background-color: aqua; */
+}
+.gambar-kegiatan > img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.detail-kegiatan{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail-kegiatan > h2{
+    text-align: center;
+    margin-bottom: 6px;
+}
+    /* kegiatan endd */
+
+    /* galery star */
+.galeryy{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.galerys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.galery{
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.galery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    /* galery end */
+.penutup{
+    background-color: black;
+    height: 20px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+/* mainbody endd */
+
+/* responsif */
+
+@media (max-width: 1181px){
+    .kata{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1165px){
+    .menu{
+        display: none;
+    }
+    .header-bawah{
+        width: 100%;
+        /* background-color: aqua; */
+        justify-content: space-between;
+        padding: 0 75px; 
+    }
+    .menu-togel{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bodyutama{
+        width: 100%;
+    }
+    .mainbody{
+        display: flex;
+    }
+
+    .sidebar{
+        width: 240px;
+        height: 100%;
+        display: block;
+        /* background-color: aqua; */
+    }
+    .menu-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 10px 5px; */
+    }
+
+    .menu-sidebar a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 100%;
+        padding: 15px 10px ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* font-size: ; */
+        text-align: center;
+    }
+    .menu-sidebar a:hover{
+        background-color: gray;
+    }
+    .menu-sidebar li{
+        width: 100%;
+    }
+    .bodyutama{
+        margin: 0;
+    }
+}
+
+@media (max-width: 920px){
+    .kegiatans {
+        flex-direction: column;
+    }
+    
+    .kegiatan{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .gambar-kegiatan img {
+        width: 240px;
+    }
+    .detail-kegiatan{
+        margin-left: 15px;
+    }
+
+
+}
+
+@media (max-width: 904px){
+    .gambar{
+        padding: 50px;
+    }
+}
+@media (max-width: 863px){
+    .kata{
+        width: 100%;
+    }
+    .header-atas{
+        display: none ;
+    }
+}
+
+@media (max-width: 681px){
+    .mainbody{
+        position: relative;
+    }
+    .sidebar{
+        display: none;
+        /* overflow-y: scroll; */
+    }
+    .header-bawah{
+        height: 50px;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: none;
+        /* background-color: aqua; */
+    }
+    .menu-sidebar a{
+        /* padding: 0 20px; */
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .show-sidebar{
+        position: absolute;
+        background-color: white;
+        transition: 0.8s;
+        height: 80vmin;
+        display: block;
+        top: 0;
+    }
+}
+
+@media (max-width: 502px){
+    .gambar{
+        padding: 35px;
+    }
+}
+@media (max-width: 472px){
+    .gambar{
+        padding: 25px;
+    }
+    .header-bawah > h3{
+        padding: 5px 5px;
+    }
+
+    .logo > h3{
+        font-size: 20px;
+    }
+
+}
